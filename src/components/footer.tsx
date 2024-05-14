@@ -32,7 +32,7 @@ export default function Footer({ pageIndex, setPageIndex }: FooterProps) {
             name: "Page 4",
           },
         ].map((item, index) => (
-          <div
+          <div key={index}
             className="flex flex-col gap-1 items-center"
             onClick={() => setPageIndex(index)}
           >
